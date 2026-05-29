@@ -1,23 +1,25 @@
-const suits = ["Wands", "Cups", "Swords", "Pentacles"]
+const suits = ["Wands", "Cups", "Swords", "Pentacles"];
 
 const values = [
-    "Ace",
-    "Two",
-    "Three",
-    "Four",
-    "Five",
-    "Six",
-    "Seven",
-    "Eight",
-    "Nine",
-    "Ten",
-    "Page",
-    "Knight",
-    "Queen",
-    "King",
-]
+  "Ace",
+  "Two",
+  "Three",
+  "Four",
+  "Five",
+  "Six",
+  "Seven",
+  "Eight",
+  "Nine",
+  "Ten",
+  "Page",
+  "Knight",
+  "Queen",
+  "King",
+];
 
-export const minorArcana = suits.map(suit => values.map(value => `${value} of ${suit}`)).flat()
+export const minorArcana = suits
+  .map((suit) => values.map((value) => `${value} of ${suit}`))
+  .flat();
 
 export const majorArcana = [
   "The Fool",
@@ -44,4 +46,4 @@ export const majorArcana = [
   "The World",
 ];
 
-export const allCards = [...minorArcana, ...majorArcana]
+export const allCards = [...minorArcana, ...majorArcana];
